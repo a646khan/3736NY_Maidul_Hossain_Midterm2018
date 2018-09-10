@@ -31,17 +31,37 @@ A. Main method is static so that it can be accessible to the Operating System wi
 Which class is the superclass of all classes?
 A. java.lang.object
 What is difference between path and classpath variables?
-A.
+A. Path is an environment variable which is used by the operating system to find the executables.
+   Classpath is an environment variable which is used by the Java compiler to find the path of classes.
 What is the difference between an Interface and Abstract class?
+A. Abstract class can have abstract and non-abstract methods.	Interface can have only abstract methods.
+   Abstract class does not support multiple inheritance but Interface does.
+   Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A. I cannot. I can only instantiate one of their subclasses.
 what is Access Specifier?
+A. These are keywords that set the accessibility of classes, methods and other members in a program
 What is OOP ? Define each feature of java OOP.
+A. OOP or Object Oriented Programming is a programming language that is organized around "objects" rather than "actions"
+   and "data" rather than "logic".
+   Features: Classes, Abstraction, Encapsulation, Inheritance, Polymorphism.
 What is Java Package and which package is imported by default?
+A. Package in Java is used to encapsulate a group of classes, sub packages and interfaces. It prevents naming conflicts,
+   makes searching and locating easier and provides controlled access.
 What is API? Name list of API that you have used so far.
+A. API or Application Programming Interface is a set of definitions, communication protocols and tools for building software.
+
 Does java support multiple inheritance, explain why or why not?
+A. No. Because when calling the method the compiler will not be able to determine which class method to be called and
+   which class method gets the priority.
 What is method overloading and when it happens?
+A. Having methods with the same name. We use it when we have methods that functions by doing the same thing.
 Explain exceptions in java and how to handle it.
+A. It is a problem that occurs during the execution of a program and the normal flow of the program is disrupted and
+   the program terminates abnormally.
+   They are handled with try-catch block, throws keyword, finally block.
 What is static keyword in java? How it has been used in variables and methods ?
+A.
 What is final and how it has been used variables and methods?
 What is final, finally and finalize?
 What is a constructor ?
