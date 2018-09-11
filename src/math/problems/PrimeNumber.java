@@ -1,6 +1,6 @@
 package math.problems;
 
-public class PrimeNumber {
+ class PrimeNumber {
 
 	public static void main(String[] args) {
 		/*
@@ -13,6 +13,31 @@ public class PrimeNumber {
 		 *
 		 */
 
+		int a = 1000000;
+		System.out.println("List of Prime numbers from 2 to 1 million : ");
+		PrimeNumber b = new PrimeNumber();
+		b.primeNumbers(a);
 	}
 
+	public void primeNumbers(int a)
+	{
+		boolean prime[] = new boolean[a+1];
+		for(int i = 0; i < a; i++)
+			prime[i] = true;
+
+		for(int c = 2; c*c <= a; c++)
+		{
+			if(prime[c] == true)
+			{
+				for(int i = c*2; i <= a; i += c)
+					prime[i] = false;
+			}
+		}
+
+		for(int i = 2; i <= a; i++)
+		{
+			if(prime[i] == true)
+				System.out.println(i + " ");
+		}
+	}
 }
